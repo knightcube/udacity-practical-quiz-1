@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username_edt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_account_circle"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColor="#FFF"
+        android:textColorHint="#96ffffff" />
+
+    <EditText
+        android:id="@+id/user_email_edt_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_edt_txt"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:textColor="#FFF"
+        android:textColorHint="#96ffffff" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/summary_edt_box"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        android:layout_below="@+id/user_email_edt_txt"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <EditText
+            android:id="@+id/summary_edt_txt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorSecondaryText"
+            android:drawableLeft="@drawable/ic_comment"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_comment"
+            android:hint="@string/write_something_about_yourself"
+            android:inputType="textLongMessage"
+            android:padding="12dp"
+            android:textColor="#FFF"
+            android:textColorHint="#96ffffff"
+            android:textSize="14sp" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <Button
+        android:layout_marginTop="4dp"
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summary_edt_box"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:drawablePadding="4dp"
+        android:text="@string/next_btn_text"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

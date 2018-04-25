@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rajatcube.sharstory.HomeScreen">
+    <item
+        android:id="@+id/action_details"
+        android:title="@string/details"
+        android:icon="@drawable/ic_account_circle"
+        app:showAsAction="ifRoom" />
+</menu>
